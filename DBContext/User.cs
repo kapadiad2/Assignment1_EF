@@ -13,6 +13,6 @@ namespace Core
 
         public string Email { get; set; }
 
-        public int Phnnum { get; set; }
+        public long  Phnnum { get; set; }
     }
 }

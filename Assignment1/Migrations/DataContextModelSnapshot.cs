@@ -149,7 +149,7 @@ namespace Assignment1.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Phnnum")
+                    b.Property<long>("Phnnum")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");

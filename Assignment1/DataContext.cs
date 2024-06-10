@@ -24,11 +24,13 @@ namespace Assignment1
         public DataContext()
         {
             var path = AppContext.BaseDirectory;
+            Console.WriteLine(path);
             DbPath = Path.Combine(path, "Assignment1.db");
         }
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             options.UseSqlite($"Data Source = {DbPath}");
         }
+       
     }
 }

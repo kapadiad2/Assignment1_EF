@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Assignment1.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240607015144_InitialDatabase")]
+    [Migration("20240610015126_InitialDatabase")]
     partial class InitialDatabase
     {
         /// <inheritdoc />
@@ -152,7 +152,7 @@ namespace Assignment1.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Phnnum")
+                    b.Property<long>("Phnnum")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");

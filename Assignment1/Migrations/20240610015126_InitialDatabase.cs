@@ -51,7 +51,7 @@ namespace Assignment1.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(type: "TEXT", nullable: false),
                     Email = table.Column<string>(type: "TEXT", nullable: false),
-                    Phnnum = table.Column<int>(type: "INTEGER", nullable: false),
+                    Phnnum = table.Column<long>(type: "INTEGER", nullable: false),
                     CreateDateTime = table.Column<DateTime>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
